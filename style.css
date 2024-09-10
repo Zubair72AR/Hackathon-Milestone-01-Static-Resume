@@ -34,7 +34,7 @@ body {
 
 .hideSkills {
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   padding: 5px 10px;
   background-color: white;
   color: #222a35;
@@ -114,26 +114,27 @@ h4 {
 
 .contact {
   font-size: 0.85rem;
-  display: flex;
   margin-left: 25%;
 }
 
 .icons {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-top: 7px;
+}
+.icons span {
+  width: 25px;
 }
 .fa-solid {
   color: crimson;
-  margin-top: 7px;
 }
 
-.infoText {
-  margin-left: 10px;
+.icons p {
+  justify-content: center;
 }
-.text {
-  margin-top: 7px;
+.right-bottom {
+  margin-top: 35px;
 }
-
 .sec {
   width: 85%;
   margin-top: 20px;
@@ -185,19 +186,32 @@ h6 {
 }
 
 .colorChange {
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   display: flex;
   justify-content: space-around;
-  margin: 30px 15%;
+  margin: 35px 15%;
   align-items: center;
 }
 .colorBtn {
-  width: 70px;
-  padding: 5px 10px;
+  width: 60px;
+  padding: 5px;
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+.red {
+  background-color: crimson;
+}
+.blue {
+  background-color: rgb(0, 88, 252);
+}
+.green {
+  background-color: rgb(16, 183, 142);
+}
+.orange {
+  background-color: rgb(255, 122, 12);
 }
 
 .copyRights {
@@ -206,7 +220,7 @@ h6 {
   position: absolute;
   border-top: 2px solid crimson;
   width: 100%;
-  height: 20px;
+  height: 25px;
   text-align: center;
   bottom: 0px;
   font-size: 10px;
