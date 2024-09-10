@@ -26,9 +26,21 @@ body {
   background-color: #222a35;
   color: white;
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
+}
+
+.hideSkills {
+  position: absolute;
+  bottom: 30px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #222a35;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 img {
@@ -46,7 +58,7 @@ h2 {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-size: 5vh;
-  letter-spacing: 2.5vh;
+  letter-spacing: 2.2vh;
 }
 
 /* Right Side Portion */
@@ -85,7 +97,7 @@ h1 {
   text-transform: uppercase;
   line-height: 2.9rem;
   font-size: 3rem;
-  margin: 18% 0px 10px 25%;
+  margin: 16% 0px 10px 25%;
 }
 
 span {
@@ -96,7 +108,7 @@ h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-left: 25%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   letter-spacing: 0.2rem;
   font-weight: 400;
 }
@@ -125,7 +137,7 @@ h4 {
 
 .sec {
   width: 85%;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -145,14 +157,46 @@ h3 {
   font-size: 15px;
 }
 h5 {
-  font-size: 18px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+h6 {
+  line-height: 15px;
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.paraText {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
 }
 .para {
+  margin-top: 10px;
   margin-left: 20px;
   line-height: 20px;
 }
 
-/* Responsive */
+.skills-list {
+  font-weight: 600;
+  margin-left: 35px;
+  font-size: 0.89rem;
+  margin-bottom: 6px;
+  line-height: 17px;
+}
+
+.colorChange {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 15%;
+}
+.colorBtn {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
 
 @media screen and (max-width: 900px) {
   .resume {
