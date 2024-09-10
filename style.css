@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: rgb(163, 163, 163);
     display: flex;
     justify-content: center;
     color: #222A35;
@@ -15,6 +15,7 @@ body{
 .resume{
     width: 60%;
     display: flex;
+    box-shadow: 0px 0px 25px rgb(61, 61, 61);
 
 }
 
@@ -53,6 +54,16 @@ h2{
 
 /* Right Side Portion */
 
+
+
+.right{
+    position: relative;
+    height: 100vh;
+    width: 75%;
+    background-color: white;
+}
+
+
 .shape{
     position: absolute;
     top: 15vh;
@@ -75,19 +86,12 @@ h2{
     color: crimson;
 }
 
-.right{
-    position: relative;
-    height: 100vh;
-    width: 75%;
-    background-color: white;
-}
-
 h1{
     color: crimson;
     text-transform: uppercase;
     line-height: 2.9rem;
     font-size: 3rem;
-    margin: 22% 0px 10px 25%;
+    margin: 18% 0px 10px 25%;
 }
 
 span{
@@ -98,9 +102,62 @@ h4{
     text-transform: uppercase;
     font-size: 1rem;
     margin-left: 25%;
+    margin-bottom: 25px;
     letter-spacing: .2rem;
     font-weight: 400;
 }
+
+.contact{
+    font-size: .85rem;
+    display: flex;
+    margin-left: 25%;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+.fa-solid{
+    color: crimson;
+    margin-top: 7px;
+}
+
+.infoText{
+    margin-left: 10px;
+}
+.text{
+    margin-top: 7px;
+}
+
+.sec{
+    width: 85%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    margin-left: -15px;
+    z-index: 9999;
+    background-color: crimson;
+    padding: 15px 5px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+.para{
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+
 
 
 /* Responsive */
