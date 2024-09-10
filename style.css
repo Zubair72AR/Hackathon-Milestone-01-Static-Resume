@@ -34,6 +34,7 @@ body{
 
 img{
     position: absolute;
+    z-index: 99999;
     width: 100%;
     top: 20%;
     left: 100%;
@@ -52,7 +53,30 @@ h2{
 
 /* Right Side Portion */
 
+.shape{
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 2vw;
+    height: 150px;
+    transform: skewY(30deg);
+    background-color: crimson;
+    color: crimson;
+}
+
+.shape2{
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    width: 2vw;
+    height: 150px;
+    transform: skewY(-30deg);
+    background-color: crimson;
+    color: crimson;
+}
+
 .right{
+    position: relative;
     height: 100vh;
     width: 75%;
     background-color: white;
