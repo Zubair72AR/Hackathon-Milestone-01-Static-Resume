@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat Franklin Gothic Medium', Arial, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    color: #222A35;
+}
+
+.resume{
+    width: 60%;
+    display: flex;
+
+}
+
+
+/* Left Side Portion */
+
+.left{
+    height: 100vh;
+    width: 25%;
+    background-color: #222A35;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border: 3px solid crimson;
+    border-radius: 50%;
+}
+
+h2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 5vh;
+    letter-spacing: 2.5vh;
+}
+
+
+/* Right Side Portion */
+
+.right{
+    height: 100vh;
+    width: 75%;
+    background-color: white;
+}
+
+h1{
+    color: crimson;
+    text-transform: uppercase;
+    line-height: 2.9rem;
+    font-size: 3rem;
+    margin: 22% 0px 10px 25%;
+}
+
+span{
+    color: #222A35;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 25%;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 900px){
+    .resume{
+        width: 100%;
+    }
+
+}
