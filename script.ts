@@ -1,9 +1,25 @@
-let skillHideShow = document.querySelector(".secSkills") as HTMLElement;
-let empty = document.querySelector(".blank") as HTMLElement;
+let skillHideShow = document.querySelector(".secSkills") as HTMLDivElement;
 let skillButton = document.querySelector(".hideSkills") as HTMLButtonElement;
 
-const flag = 0;
+let flag = 0;
 
 skillButton.addEventListener("click", function () {
-  skillHideShow.innerHTML = "empty";
+  if (flag == 0) {
+    skillHideShow.innerHTML = "";
+    skillButton.innerText = "Show Skills";
+    flag = 1;
+  } else {
+    skillHideShow.innerHTML = `<div><h3>Skills</h3></div>
+            <ul class="skills-list">
+              <li>Typescript</li>
+              <li>Next js</li>
+              <li>React</li>
+              <li>HTML/CSS</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe AfterEffect</li>
+            </ul>`;
+    skillButton.innerText = "Hide Skills";
+    flag = 0;
+  }
 });
