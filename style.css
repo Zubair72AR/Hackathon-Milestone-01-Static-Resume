@@ -160,7 +160,9 @@ h4 {
   align-items: center;
 }
 
-h3 {
+.infoEducation,
+.infoExperience,
+.infoSkills {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-transform: uppercase;

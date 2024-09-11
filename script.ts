@@ -27,22 +27,13 @@ let flag = 0;
 skillButton.addEventListener("click", function () {
   if (flag == 0) {
     /* Skill Section Remove all elements*/
-    skillHideShow.innerHTML = "";
+    skillHideShow.style.display = "none";
     /* Change Button Text */
     skillButton.innerText = "Show Skills";
     flag = 1;
   } else {
     /* Skill Section Pasted Elements*/
-    skillHideShow.innerHTML = `<div><h3 class="infoSkills">Skills</h3></div>
-            <ul class="skills-list">
-              <li>Typescript</li>
-              <li>Next js</li>
-              <li>React</li>
-              <li>HTML/CSS</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe AfterEffect</li>
-            </ul>`;
+    skillHideShow.style.display = "flex";
     /* Change Button Text */
     skillButton.innerText = "Hide Skills";
     flag = 0;
