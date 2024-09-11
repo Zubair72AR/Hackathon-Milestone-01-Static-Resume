@@ -1,29 +1,6 @@
 let skillHideShow = document.querySelector(".secSkills") as HTMLDivElement;
 let skillButton = document.querySelector(".hideSkills") as HTMLButtonElement;
 
-let flag = 0;
-
-skillButton.addEventListener("click", function () {
-  if (flag == 0) {
-    skillHideShow.innerHTML = "";
-    skillButton.innerText = "Show Skills";
-    flag = 1;
-  } else {
-    skillHideShow.innerHTML = `<div><h3>Skills</h3></div>
-    <ul class="skills-list">
-    <li>Typescript</li>
-    <li>Next js</li>
-    <li>React</li>
-    <li>HTML/CSS</li>
-    <li>Adobe Illustrator</li>
-    <li>Adobe Photoshop</li>
-    <li>Adobe AfterEffect</li>
-    </ul>`;
-    skillButton.innerText = "Hide Skills";
-    flag = 0;
-  }
-});
-
 /* Color Changing Setting*/
 /* All Button */
 let colorPick = document.querySelector(".colorPicker") as HTMLInputElement;
@@ -44,6 +21,30 @@ let InfoExp = document.querySelector(".infoExperience") as HTMLDivElement;
 let InfoSki = document.querySelector(".infoSkills") as HTMLDivElement;
 
 let copyRight = document.querySelector(".copyRights") as HTMLDivElement;
+
+let flag = 0;
+
+skillButton.addEventListener("click", function () {
+  if (flag == 0) {
+    skillHideShow.innerHTML = "";
+    skillButton.innerText = "Show Skills";
+    flag = 1;
+  } else {
+    skillHideShow.innerHTML = `<div><h3 class="infoSkills">Skills</h3></div>
+            <ul class="skills-list">
+              <li>Typescript</li>
+              <li>Next js</li>
+              <li>React</li>
+              <li>HTML/CSS</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe AfterEffect</li>
+            </ul>
+          </div>`;
+    skillButton.innerText = "Hide Skills";
+    flag = 0;
+  }
+});
 
 colorPick.addEventListener("input", function () {
   shapeOne.style.backgroundColor = colorPick.value;
