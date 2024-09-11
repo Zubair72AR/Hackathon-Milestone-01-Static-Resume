@@ -35,8 +35,8 @@ body {
 .hideSkills {
   cursor: pointer;
   position: absolute;
-  bottom: 35px;
-  padding: 5px 10px;
+  bottom: 40px;
+  padding: 7px 14px;
   background-color: white;
   color: #222a35;
   border: none;
@@ -187,20 +187,20 @@ h6 {
 }
 
 .colorChange {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  text-transform: uppercase;
   display: flex;
-  justify-content: space-around;
-  margin: 35px 10%;
+  justify-content: end;
+  margin: 35px 50px;
   align-items: center;
 }
-.colorBtn {
+.colorPicker {
   cursor: pointer;
-  width: 60px;
-  padding: 5px;
-  color: white;
+  width: 80px;
+  height: 40px;
   border: none;
-  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .red {

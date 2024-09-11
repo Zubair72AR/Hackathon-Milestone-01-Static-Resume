@@ -26,10 +26,7 @@ skillButton.addEventListener("click", function () {
 
 /* Color Changing Setting*/
 /* All Button */
-let blueBtn = document.querySelector(".blue") as HTMLButtonElement;
-let;
-/* Colors Variables*/
-const blueColor: string = "rgb(0, 88, 252)";
+let colorPick = document.querySelector(".colorPicker") as HTMLInputElement;
 /* All Elements Need to be changed */
 let shapeOne = document.querySelector(".shape1") as HTMLDivElement;
 let shapeTwo = document.querySelector(".shape2") as HTMLDivElement;
@@ -48,24 +45,24 @@ let InfoSki = document.querySelector(".infoSkills") as HTMLDivElement;
 
 let copyRight = document.querySelector(".copyRights") as HTMLDivElement;
 
-blueBtn.addEventListener("click", function () {
-  shapeOne.style.backgroundColor = blueColor;
-  shapeOne.style.color = blueColor;
+colorPick.addEventListener("input", function () {
+  shapeOne.style.backgroundColor = colorPick.value;
+  shapeOne.style.color = colorPick.value;
 
-  shapeTwo.style.color = blueColor;
-  shapeTwo.style.backgroundColor = blueColor;
+  shapeTwo.style.color = colorPick.value;
+  shapeTwo.style.backgroundColor = colorPick.value;
 
-  imageBorder.style.borderColor = blueColor;
+  imageBorder.style.borderColor = colorPick.value;
 
-  Head1.style.color = blueColor;
+  Head1.style.color = colorPick.value;
 
-  iconPhone.style.color = blueColor;
-  iconEmail.style.color = blueColor;
-  iconAddress.style.color = blueColor;
+  iconPhone.style.color = colorPick.value;
+  iconEmail.style.color = colorPick.value;
+  iconAddress.style.color = colorPick.value;
 
-  InfoEdu.style.backgroundColor = blueColor;
-  InfoExp.style.backgroundColor = blueColor;
-  InfoSki.style.backgroundColor = blueColor;
+  InfoEdu.style.backgroundColor = colorPick.value;
+  InfoExp.style.backgroundColor = colorPick.value;
+  InfoSki.style.backgroundColor = colorPick.value;
 
-  copyRight.style.borderColor = blueColor;
+  copyRight.style.borderColor = colorPick.value;
 });

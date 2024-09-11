@@ -25,12 +25,7 @@ skillButton.addEventListener("click", function () {
 });
 /* Color Changing Setting*/
 /* All Button */
-let blueBtn = document.querySelector(".blue");
-let redBtn = document.querySelector(".red");
-let greenBtn = document.querySelector(".green");
-let orangeBtn = document.querySelector(".orange");
-/* Colors Variables*/
-const blueColor = "rgb(0, 88, 252)";
+let colorPick = document.querySelector(".colorPicker");
 /* All Elements Need to be changed */
 let shapeOne = document.querySelector(".shape1");
 let shapeTwo = document.querySelector(".shape2");
@@ -43,18 +38,18 @@ let InfoEdu = document.querySelector(".infoEducation");
 let InfoExp = document.querySelector(".infoExperience");
 let InfoSki = document.querySelector(".infoSkills");
 let copyRight = document.querySelector(".copyRights");
-blueBtn.addEventListener("click", function () {
-    shapeOne.style.backgroundColor = blueColor;
-    shapeOne.style.color = blueColor;
-    shapeTwo.style.color = blueColor;
-    shapeTwo.style.backgroundColor = blueColor;
-    imageBorder.style.borderColor = blueColor;
-    Head1.style.color = blueColor;
-    iconPhone.style.color = blueColor;
-    iconEmail.style.color = blueColor;
-    iconAddress.style.color = blueColor;
-    InfoEdu.style.backgroundColor = blueColor;
-    InfoExp.style.backgroundColor = blueColor;
-    InfoSki.style.backgroundColor = blueColor;
-    copyRight.style.borderColor = blueColor;
+colorPick.addEventListener("input", function () {
+    shapeOne.style.backgroundColor = colorPick.value;
+    shapeOne.style.color = colorPick.value;
+    shapeTwo.style.color = colorPick.value;
+    shapeTwo.style.backgroundColor = colorPick.value;
+    imageBorder.style.borderColor = colorPick.value;
+    Head1.style.color = colorPick.value;
+    iconPhone.style.color = colorPick.value;
+    iconEmail.style.color = colorPick.value;
+    iconAddress.style.color = colorPick.value;
+    InfoEdu.style.backgroundColor = colorPick.value;
+    InfoExp.style.backgroundColor = colorPick.value;
+    InfoSki.style.backgroundColor = colorPick.value;
+    copyRight.style.borderColor = colorPick.value;
 });
