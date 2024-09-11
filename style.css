@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat Franklin Gothic Medium", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -42,6 +44,7 @@ body {
   border: none;
   border-radius: 5px;
   font-weight: 600;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -53,6 +56,7 @@ img {
   transform: translate(-50%, -50%);
   border: 3px solid crimson;
   border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -92,6 +96,8 @@ h2 {
   color: crimson;
 }
 
+/* Name Heading */
+
 h1 {
   color: crimson;
   text-transform: uppercase;
@@ -104,17 +110,22 @@ span {
   color: #222a35;
 }
 
+/* Designation */
+
 h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-left: 25%;
   margin-bottom: 10px;
   letter-spacing: 0.2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
+
+/* Contact Info */
 
 .contact {
   font-size: 0.85rem;
+  font-weight: 500;
   margin-left: 25%;
 }
 
@@ -123,9 +134,11 @@ h4 {
   align-items: center;
   margin-top: 7px;
 }
+
 .icons span {
   width: 25px;
 }
+
 .fa-solid {
   color: crimson;
 }
@@ -133,9 +146,13 @@ h4 {
 .icons p {
   justify-content: center;
 }
+
+/* Bottom Part of Right Side */
+
 .right-bottom {
   margin-top: 35px;
 }
+
 .sec {
   width: 85%;
   margin-top: 20px;
@@ -155,23 +172,28 @@ h3 {
   color: white;
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 1rem;
 }
+
 h5 {
   font-size: 0.9rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
+
 h6 {
   line-height: 15px;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
 
 .paraText {
   font-size: 0.85rem;
+  font-weight: 500;
   margin-bottom: 6px;
 }
+
 .para {
   margin-top: 10px;
   margin-left: 20px;
@@ -186,6 +208,8 @@ h6 {
   line-height: 17px;
 }
 
+/* Color Changing Button */
+
 .colorChange {
   font-size: 0.95rem;
   font-weight: 600;
@@ -195,6 +219,7 @@ h6 {
   margin: 35px 50px;
   align-items: center;
 }
+
 .colorPicker {
   cursor: pointer;
   width: 80px;
@@ -203,18 +228,7 @@ h6 {
   margin-left: 10px;
 }
 
-.red {
-  background-color: crimson;
-}
-.blue {
-  background-color: rgb(0, 88, 252);
-}
-.green {
-  background-color: rgb(16, 183, 142);
-}
-.orange {
-  background-color: rgb(255, 122, 12);
-}
+/* Copy Right Info - Footer  */
 
 .copyRights {
   color: white;
@@ -225,8 +239,16 @@ h6 {
   height: 25px;
   text-align: center;
   bottom: 0px;
-  font-size: 10px;
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
 }
+
+.copyRights {
+  padding-top: 3px;
+}
+
+/* Responsive */
 
 @media screen and (max-width: 900px) {
   .resume {
