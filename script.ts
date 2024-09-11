@@ -27,9 +27,7 @@ skillButton.addEventListener("click", function () {
 /* Color Changing Setting*/
 /* All Button */
 let blueBtn = document.querySelector(".blue") as HTMLButtonElement;
-let redBtn = document.querySelector(".red") as HTMLButtonElement;
-let greenBtn = document.querySelector(".green") as HTMLButtonElement;
-let orangeBtn = document.querySelector(".orange") as HTMLButtonElement;
+let;
 /* Colors Variables*/
 const blueColor: string = "rgb(0, 88, 252)";
 /* All Elements Need to be changed */
