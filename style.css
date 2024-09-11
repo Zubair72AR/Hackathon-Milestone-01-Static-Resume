@@ -33,6 +33,7 @@ body {
 }
 
 .hideSkills {
+  cursor: pointer;
   position: absolute;
   bottom: 35px;
   padding: 5px 10px;
@@ -194,6 +195,7 @@ h6 {
   align-items: center;
 }
 .colorBtn {
+  cursor: pointer;
   width: 60px;
   padding: 5px;
   color: white;

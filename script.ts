@@ -1,18 +1,9 @@
 let skillHideShow = document.querySelector(".secSkills") as HTMLElement;
+let empty = document.querySelector(".blank") as HTMLElement;
+let skillButton = document.querySelector(".hideSkills") as HTMLButtonElement;
 
 const flag = 0;
 
-function.skills ("click", skillHideShow){
-    if (flag == 0){
-        console.log({"<div><h3>Skills</h3></div>
-            <ul class="skills-list">
-              <li>Typescript</li>
-              <li>Next js</li>
-              <li>React</li>
-              <li>HTML/CSS</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe AfterEffect</li>
-            </ul>"})
-    }
-}
+skillButton.addEventListener("click", function () {
+  skillHideShow.innerHTML = "empty";
+});
