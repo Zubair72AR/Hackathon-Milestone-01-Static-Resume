@@ -50,8 +50,8 @@ body {
 img {
   position: absolute;
   z-index: 99999;
-  width: 100%;
-  top: 18%;
+  width: 110%;
+  top: 17%;
   left: 100%;
   transform: translate(-50%, -50%);
   border: 3px solid crimson;

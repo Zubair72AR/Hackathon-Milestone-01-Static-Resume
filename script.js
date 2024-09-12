@@ -1,8 +1,25 @@
 "use strict";
+/* Skill Show Hide Setting */
 let skillHideShow = document.querySelector(".secSkills");
 let skillButton = document.querySelector(".hideSkills");
+let flag = 0;
+skillButton.addEventListener("click", function () {
+    if (flag == 0) {
+        /* Skill Section Hide */
+        skillHideShow.style.display = "none";
+        /* Change Button Text */
+        skillButton.innerText = "Show Skills";
+        flag = 1;
+    }
+    else {
+        /* Skill Section Show */
+        skillHideShow.style.display = "flex";
+        /* Change Button Text */
+        skillButton.innerText = "Hide Skills";
+        flag = 0;
+    }
+});
 /* Color Changing Setting*/
-/* All Button */
 let colorPick = document.querySelector(".colorPicker");
 /* All Elements Need to be changed */
 let shapeOne = document.querySelector(".shape1");
@@ -16,23 +33,6 @@ let InfoEdu = document.querySelector(".infoEducation");
 let InfoExp = document.querySelector(".infoExperience");
 let InfoSki = document.querySelector(".infoSkills");
 let copyRight = document.querySelector(".copyRights");
-let flag = 0;
-skillButton.addEventListener("click", function () {
-    if (flag == 0) {
-        /* Skill Section Remove all elements*/
-        skillHideShow.style.display = "none";
-        /* Change Button Text */
-        skillButton.innerText = "Show Skills";
-        flag = 1;
-    }
-    else {
-        /* Skill Section Pasted Elements*/
-        skillHideShow.style.display = "flex";
-        /* Change Button Text */
-        skillButton.innerText = "Hide Skills";
-        flag = 0;
-    }
-});
 /* Color Picker */
 colorPick.addEventListener("input", function () {
     shapeOne.style.backgroundColor = colorPick.value;
