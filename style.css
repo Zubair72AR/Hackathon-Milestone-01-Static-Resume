@@ -15,7 +15,7 @@ body {
 }
 
 .resume {
-  width: 60%;
+  max-width: 900px;;
   margin-top: 20px;
   display: flex;
   position: relative;
